@@ -6,7 +6,7 @@ This project used the `keras` library in Python to develop a deep learning model
 
 Key steps in this project:
 
-- Used the `requests` and `pandas` packages to get data from CMS and the State of California
+- Used the `requests` and `pandas` packages to get data from the CMS API and the State of California
 - Used the `fuzzywuzzy` package to fuzzy match state and federal hospital datasets on hospital name and address
 - Used the `scikit-learn` and `pandas` packages to prepare a clean dataset for analysis, and used `pickle` to save a preprocessing pipeline
 - Used `keras` to generate a classification algorithm to predict hospital participation in the program, and saved the best-performing model
