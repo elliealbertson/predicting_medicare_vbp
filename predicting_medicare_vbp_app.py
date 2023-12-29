@@ -10,7 +10,7 @@ model = tf.keras.models.load_model('predicting_medicare_vbp_model.h5')
 
 st.set_page_config(layout="wide")
 
-st.title('Predicting Medicare Value-Based Payment Program Participation')
+st.title('Predicting Medicare Hospital Value-Based Purchasing Program Participation')
 st.write('Select hospital characteristics to get a prediction.')
 
 st.markdown(
