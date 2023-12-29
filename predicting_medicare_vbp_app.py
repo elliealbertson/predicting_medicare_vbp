@@ -2,7 +2,6 @@ import joblib
 import tensorflow as tf
 import streamlit as st
 import pandas as pd
-import sklearn
 
 pipeline = joblib.load('predicting_medicare_vbp_pipeline.joblib')
 model = tf.keras.models.load_model('predicting_medicare_vbp_model.h5')
