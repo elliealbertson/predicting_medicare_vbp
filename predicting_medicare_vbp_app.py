@@ -8,11 +8,10 @@ with open('predicting_medicare_vbp_pipeline.pkl', 'rb') as file:
 
 model = tf.keras.models.load_model('predicting_medicare_vbp_model.h5')
 
-st.title('Predicting Medicare Value-Based Payment Program Participation')
-
-st.write('Select hospital characteristics to get a prediction.')
-
 st.set_page_config(layout="wide")
+
+st.title('Predicting Medicare Value-Based Payment Program Participation')
+st.write('Select hospital characteristics to get a prediction.')
 
 st.markdown(
     """
