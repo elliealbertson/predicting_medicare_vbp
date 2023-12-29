@@ -15,10 +15,6 @@ st.write('Select hospital characteristics to get a prediction.')
 st.markdown(
     """
     <style>
-        .main {
-            margin-left: 10px !important;
-            margin-right: 10px !important;
-        }
         .sidebar {
             background-color: #f2f2f2;
             padding: 10px;
@@ -45,14 +41,14 @@ category_options = {
     'rural': ["Yes", "No"]
 }
 
-col1, col2 = st.columns(2)
+col1, col2, col3, col4 = st.columns(1,3,3,1)
 
-with col1:
+with col2:
     ownership = st.selectbox('Hospital Ownership', list(category_options['ownership']))
     emergency = st.selectbox('Has Emergency Services', list(category_options['emergency']))
     interoperability = st.selectbox('Meets Criteria for Promoting Interoperability of EHRs', list(category_options['interoperability']))
 
-with col2:
+with col3:
     teaching = st.selectbox('Teaching Hospital', list(category_options['teaching']))
     rural = st.selectbox('Rural Hospital', list(category_options['rural']))
     beds = st.slider('Number of Beds', min_value=0, max_value=1400, value=200)
