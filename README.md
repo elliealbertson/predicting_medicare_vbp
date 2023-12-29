@@ -2,7 +2,7 @@
 
 Value-based purchasing programs can incentivize higher quality health care at a lower cost.
 
-This project used the `keras` library in Python to develop a deep learning model to predict hospital participation in a Medicare value-based purchasing program from the Centers for Medicare and Medicaid Services (CMS), and used Streamlit to publisih an app interface.
+This project used the `keras` library in Python to develop a deep learning model to predict hospital participation in a Medicare value-based purchasing program from the Centers for Medicare and Medicaid Services (CMS), and used Streamlit to publish an app interface.
 
 Key steps in this project:
 
