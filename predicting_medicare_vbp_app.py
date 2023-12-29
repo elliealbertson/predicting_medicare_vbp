@@ -20,14 +20,18 @@ st.markdown(
             padding: 10px;
             border-radius: 5px;
             margin-right: 10px;
+            font-family: 'Calibri', sans-serif;
         }
     </style>
     """,
     unsafe_allow_html=True
 )
 
-st.sidebar.title('Sidebar Title')
-st.sidebar.text('This is the sidebar.')
+st.sidebar.title('About')
+st.sidebar.text('This app predicts whether a hospital is likely to participate in the Medicare Hospital Value-Based Purchasing (HVBP) Program with the Centers for Medicare & Medicaid Services (CMS). The training set consisted of acute care hospitals in California.')
+
+st.sidebar.title('Source Code')
+st.sidebar.text('Code is available on GitHub.')
 
 category_options = {
     'ownership': ["Voluntary Non-Profit", "Proprietary", "Government"],
