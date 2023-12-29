@@ -1,5 +1,5 @@
 import pickle
-import scikit-learn
+import scikit_learn
 #from sklearn.compose import ColumnTransformer
 #from sklearn.preprocessing import OneHotEncoder, MinMaxScaler
 #from sklearn.pipeline import Pipeline
