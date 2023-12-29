@@ -73,5 +73,4 @@ elif probability[0][0] > 0.5:
 else:
     predicted_class = "Not Likely to Participate"
 
-with col1:
-    st.success(f'The Hospital is {predicted_class} (Probability of Participation = {probability[0][0]:.3f})')
+st.success(f'The Hospital is {predicted_class} (Probability of Participation = {probability[0][0]:.3f})')
