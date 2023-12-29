@@ -12,17 +12,7 @@ st.title('Predicting Medicare Value-Based Payment Program Participation')
 
 st.write('Select hospital characteristics to get a prediction.')
 
-st.markdown(
-    """
-    <style>
-        .main {
-            margin-left: 10px !important;
-            margin-right: 10px !important;
-        }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
+st.set_page_config(layout="wide")
 
 st.markdown(
     """
