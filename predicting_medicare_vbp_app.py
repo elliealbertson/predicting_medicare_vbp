@@ -1,8 +1,8 @@
 import pickle
-import sklearn
-from sklearn.compose import ColumnTransformer
-from sklearn.preprocessing import OneHotEncoder, MinMaxScaler
-from sklearn.pipeline import Pipeline
+#import sklearn
+#from sklearn.compose import ColumnTransformer
+#from sklearn.preprocessing import OneHotEncoder, MinMaxScaler
+#from sklearn.pipeline import Pipeline
 import tensorflow as tf
 import streamlit as st
 import pandas as pd
