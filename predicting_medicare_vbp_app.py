@@ -1,7 +1,6 @@
-import pickle
+import tensorflow as tf
 import streamlit as st
 
-with open('predicting_medicare_vbp_pipeline.pkl', 'rb') as file:
-    pipeline = pickle.load(file)
+model = tf.keras.models.load_model('predicting_medicare_vbp_model.h5')
 
 st.title('Predicting Medicare Value-Based Payment Program Participation')
