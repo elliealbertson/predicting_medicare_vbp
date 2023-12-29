@@ -10,8 +10,6 @@ model = tf.keras.models.load_model('predicting_medicare_vbp_model.h5')
 
 st.title('Predicting Medicare Value-Based Payment Program Participation')
 
-st.write("This app predicts whether a hospital is likely to participate in the Medicare Hospital Value-Based Purchasing (HVBP) Program with the Centers for Medicare & Medicaid Services (CMS). The training set consisted of acute care hospitals in California.")
-
 st.markdown(
     """
     <style>
