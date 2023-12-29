@@ -10,9 +10,15 @@ model = tf.keras.models.load_model('predicting_medicare_vbp_model.h5')
 
 st.title('Predicting Medicare Value-Based Payment Program Participation')
 
+st.write('Select hospital characteristics to get a prediction.')
+
 st.markdown(
     """
     <style>
+        .main {
+            margin-left: 10px !important;
+            margin-right: 10px !important;
+        }
         .sidebar {
             background-color: #f2f2f2;
             padding: 10px;
@@ -26,7 +32,7 @@ st.markdown(
 )
 
 st.sidebar.header('About')
-st.sidebar.markdown('This app predicts whether a hospital is likely to participate in the Medicare Hospital Value-Based Purchasing (HVBP) Program with the Centers for Medicare & Medicaid Services (CMS). The training set consisted of acute care hospitals in California.')
+st.sidebar.markdown('This app predicts whether a hospital is likely to participate in the [Medicare Hospital Value-Based Purchasing (HVBP) Program](https://www.cms.gov/medicare/quality/initiatives/hospital-quality-initiative/hospital-value-based-purchasing) with the Centers for Medicare & Medicaid Services (CMS). The training set consisted of acute care hospitals in California.')
 
 st.sidebar.header('Source Code')
 st.sidebar.markdown('Code is available [here](https://github.com/elliealbertson/predicting_medicare_vbp).')
