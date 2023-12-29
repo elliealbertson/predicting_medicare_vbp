@@ -27,11 +27,11 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-st.sidebar.title('About')
-st.sidebar.text('This app predicts whether a hospital is likely to participate in the Medicare Hospital Value-Based Purchasing (HVBP) Program with the Centers for Medicare & Medicaid Services (CMS). The training set consisted of acute care hospitals in California.')
+st.sidebar.header('About')
+st.sidebar.markdown('This app predicts whether a hospital is likely to participate in the Medicare Hospital Value-Based Purchasing (HVBP) Program with the Centers for Medicare & Medicaid Services (CMS). The training set consisted of acute care hospitals in California.')
 
-st.sidebar.title('Source Code')
-st.sidebar.text('Code is available on GitHub.')
+st.sidebar.header('Source Code')
+st.sidebar.markdown('Code is available [here](https://github.com/elliealbertson/predicting_medicare_vbp).')
 
 category_options = {
     'ownership': ["Voluntary Non-Profit", "Proprietary", "Government"],
