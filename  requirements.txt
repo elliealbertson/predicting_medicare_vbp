@@ -1,4 +1,4 @@
-joblib
-tensorflow
-streamlit
-pandas
+joblib==1.3.2
+tensorflow==2.12.0
+streamlit==1.29.0
+pandas==2.1.4
