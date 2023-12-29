@@ -1,14 +1,13 @@
 import pickle
-import scikit_learn
-#from sklearn.compose import ColumnTransformer
-#from sklearn.preprocessing import OneHotEncoder, MinMaxScaler
-#from sklearn.pipeline import Pipeline
+from sklearn.compose import ColumnTransformer
+from sklearn.preprocessing import OneHotEncoder, MinMaxScaler
+from sklearn.pipeline import Pipeline
 import tensorflow as tf
 import streamlit as st
 import pandas as pd
 
-#with open('predicting_medicare_vbp_pipeline.pkl', 'rb') as file:
-#    pipeline = pickle.load(file)
+with open('predicting_medicare_vbp_pipeline.pkl', 'rb') as file:
+    pipeline = pickle.load(file)
 
 model = tf.keras.models.load_model('predicting_medicare_vbp_model.h5')
 
@@ -45,13 +44,13 @@ input = pd.DataFrame({
     'beds': [beds]
 })
 
-#input = pipeline.transform(input)
+input = pipeline.transform(input)
 
-#probability = model.predict(input)
-#if probability[0][0] > 0.8:
-#    predicted_class = "Very Likely to Participate"
-#elif probability[0][0] > 0.5:
-#    predicted_class = "Somewhat Likely to Participate"
-#else:
-#    predicted_class = "Not Likely to Participate"
-#st.success(f'The Hospital is {predicted_class} (Probability of Participation = {probability[0][0]:.3f})')
+probability = model.predict(input)
+if probability[0][0] > 0.8:
+    predicted_class = "Very Likely to Participate"
+elif probability[0][0] > 0.5:
+    predicted_class = "Somewhat Likely to Participate"
+else:
+    predicted_class = "Not Likely to Participate"
+st.success(f'The Hospital is {predicted_class} (Probability of Participation = {probability[0][0]:.3f})')
