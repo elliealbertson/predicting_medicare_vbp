@@ -53,7 +53,7 @@ category_options = {
     'rural': ["Yes", "No"]
 }
 
-col1, col2 = st.columns()
+col1, col2 = st.columns(2)
 
 with col1:
     ownership = st.selectbox('Hospital Ownership', list(category_options['ownership']))
