@@ -1,7 +1,4 @@
 import pickle
-#from sklearn.compose import ColumnTransformer
-#from sklearn.preprocessing import OneHotEncoder, MinMaxScaler
-#from sklearn.pipeline import Pipeline
 import tensorflow as tf
 import streamlit as st
 import pandas as pd
@@ -14,6 +11,23 @@ model = tf.keras.models.load_model('predicting_medicare_vbp_model.h5')
 st.title('Predicting Medicare Value-Based Payment Program Participation')
 
 st.write("This app predicts whether a hospital is likely to participate in the Medicare Hospital Value-Based Purchasing (HVBP) Program with the Centers for Medicare & Medicaid Services (CMS). The training set consisted of acute care hospitals in California.")
+
+st.markdown(
+    """
+    <style>
+        .sidebar {
+            background-color: #f2f2f2;
+            padding: 10px;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+st.sidebar.title('Sidebar Title')
+st.sidebar.text('This is the sidebar.')
 
 category_options = {
     'ownership': ["Voluntary Non-Profit", "Proprietary", "Government"],
